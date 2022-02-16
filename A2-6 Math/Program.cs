@@ -6,22 +6,24 @@ namespace A2_6_Math
     {
         static void Main()
         {
-            decimal diameter;
-            decimal circumference;
-            decimal area;
-            decimal rad;
-
-
+            double diameter;
+            double circ;
+            double area;
+            double rad;
+            double pi = 3.14;
+           // double sqr = Math.Pow(rad, 2);
             Console.WriteLine("enter circle radius");
-            rad = decimal.Parse(Console.ReadLine());
-
+            rad = double.Parse(Console.ReadLine());
+            
             diameter = rad * 2;
             //must read section on pi and on decimals.
-            circumference = diameter * 3.14;
-
+            circ = diameter * pi;
+            area = rad * rad * pi;
 
             
             Console.WriteLine($"diameter = {diameter}");
+            Console.WriteLine($"Circumference = {circ}");
+            Console.WriteLine($"area = {area}");
         }
     }
 }
